@@ -1,0 +1,24 @@
+{
+  "name": "lab-robot-base",
+  "version": "1.0.0",
+  "description": "A Raspberry Pi + Arduino based robot base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftl-robots/lab-robot-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftl-robots/lab-robot-base/issues"
+  },
+  "homepage": "https://github.com/ftl-robots/lab-robot-base#readme",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "rosnodejs": "^3.0.0",
+    "winston": "^3.0.0"
+  }
+}

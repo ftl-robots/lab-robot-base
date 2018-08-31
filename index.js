@@ -50,6 +50,15 @@ if (!LinkInterface) {
     linkName = "sim";
 }
 
+// Reference to the implementation
+const HardwareImpl = hardwareConfig.implementation;
+
 logger.info("===== Initializing Robot =====");
 logger.info(`Hardware Configuration: ${hwConfigName}`);
 logger.info(`Link Interface: ${linkName}`);
+
+const linkInstance = new LinkInterface();
+const robotInstance = new HardwareImpl(hardwareConfig);
+
+// Start the linkInstance
+linkInstance.start();
